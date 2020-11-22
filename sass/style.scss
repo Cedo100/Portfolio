@@ -1,0 +1,26 @@
+@import "config";
+@import "header";
+
+.site-content{
+
+    .site-body{
+
+        .about{
+            text-align: center;
+            padding: 100px 0;
+            background: $red;
+            color: $white;
+        }
+
+        .f-s{
+            margin-top: 50px;
+
+            .features{
+                
+                li{
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
