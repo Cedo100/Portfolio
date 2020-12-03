@@ -1,0 +1,67 @@
+@import "partials/config";
+
+@media all and (max-width : 570px){
+
+    .site-header{
+        position: static;
+        box-shadow: none;
+
+        .menu-icon{
+            display: block;
+        }
+
+        .site-header-name, .site-header-nav{
+            float: none;
+        }
+
+        .site-header-nav{
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 250px;
+            background: $ft;
+            transform: translateX(-250px);
+
+            a{
+                display: block;
+                margin: 0 25px 0 25px;
+                border-bottom: solid black 1px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .site-content{
+        overflow-y: scroll;
+        position: absolute;
+        padding-top: 0;
+        top:  75px; bottom: 0; left: 0; right: 0;
+    }
+
+    .site-wrapper{
+        transition: all 0.3s linear 0.3s;
+        transform: translateX(0px);
+        height: 100%;
+   }
+
+   .isActive{
+
+        .site-wrapper{
+            transform: translateX(250px);
+        }
+
+        .overlay{
+            position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+            background: rgba(0,0,0,0.4);
+        }
+    }
+
+    .site-container{
+        height: 100%;
+        overflow: hidden;
+    }
+}

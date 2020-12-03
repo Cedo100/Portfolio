@@ -1,5 +1,7 @@
-@import "config";
-@import "header";
+@import "partials/config";
+@import "partials/header";
+@import "partials/idm";
+@import "partials/ham";
 
 .site-content{
 
@@ -8,12 +10,17 @@
         .about{
             text-align: center;
             padding: 100px 0;
+            
             background: $red;
             color: $white;
+
+            .row{
+                margin: 0 10px;
+            }
         }
 
         .f-s{
-            margin-top: 50px;
+            margin: 100px 0 0 0;
 
             .features{
                 
@@ -21,6 +28,56 @@
                     margin: 20px 0;
                 }
             }
+        }
+
+        .portfolio{
+
+            margin: 100px 0 0 0;
+            
+            .project-name{
+                border: solid black 1px;
+                background: $gray;
+                display: inline-block;
+                padding: 10px;
+                font-style: oblique;
+            }
+
+            img{
+                margin: 20px 0;
+                width: 100%;
+                text-align: middle;
+            }
+        }
+
+        .contact{
+            margin: 100px 0 0 0;
+            //text-align: center;
+
+            input, textarea{
+                width: 100%;
+            }
+
+            button{
+                font-size: 24px;
+            }
+        }
+    }
+
+    .site-footer{
+        margin: 100px 0 0 0;
+        background: $ft;
+        text-align: center;
+        color: white;
+
+        img{
+            height: 50px;
+            width: 50px;
+        }
+
+        .social{
+            display: inline-block;
+            
+            
         }
     }
 }
