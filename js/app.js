@@ -7,7 +7,7 @@
             el.addClass('is-opened').removeClass('is-closed');
         }
     }
-    
+
     $('.field-input').on('focus', function(){
         $(this).parent().addClass('is-focused has-label');
     });

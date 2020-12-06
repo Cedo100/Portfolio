@@ -41,6 +41,9 @@ a:active {
 li[data-target] {
   background: black; }
 
+.cont {
+  margin: 0 10px; }
+
 .site-header {
   height: 75px;
   position: fixed;
@@ -200,7 +203,7 @@ li[data-target] {
     width: 100%;
     text-align: middle; }
 .site-content .site-body .contact {
-  margin: 100px 0 0 0; }
+  margin: 100px 10px 0 10px; }
   .site-content .site-body .contact input, .site-content .site-body .contact textarea {
     width: 100%; }
   .site-content .site-body .contact button {
